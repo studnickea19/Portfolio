@@ -1,0 +1,77 @@
+SASS
+
+Nesting: placing selector inside the scope of another selector;
+	-Selectors that are nested are referred to as children
+EX:
+
+.parent {
+  color: blue;
+  .child {
+    font-size: 12px;
+  }
+}
+
+--IS THE SAME AS--
+
+parent {
+  color: blue;
+}
+
+.parent .child {
+    font-size: 12px;
+}
+
+Nested Pseudo Selector "&:"
+	Ex: &:hover{}
+
+Mixin: Group of CSS to reuse throughout site.
+
+EX:
+	CREATE:
+	@mixin backface-visibility {
+	  backface-visibility: hidden;
+	  -webkit-backface-visibility: hidden;
+	  -moz-backface-visibility: hidden;
+	  -ms-backface-visibility: hidden;
+	  -o-backface-visibility: hidden;
+	}
+	IMPLEMENT:
+	notecard {
+	.front, .back {
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+
+	    @include backface-visibility;
+	  }
+	}
+
+	-Can take in values/parameters
+
+Functions
+
+width: if( $condition, $value-if-true, $value-if-false);
+
+@for $item in $list{} OR @for $i from 1 thorugh $total{
+	.#{item}{
+		background-color: $item;
+	}
+}
+
+File Structure
+	-Components
+		-Buttons
+		-Carousel
+		-etc
+	-Helpers
+		-variables
+		-functions
+		-mixins
+	-Layout
+		-grid
+		-header
+		-footer
+	-Pages
+		-Home
+		-Contant
+		-etc
