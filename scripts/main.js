@@ -4,7 +4,7 @@ $(document).ready(function(){
 		$(this).css("background-color", "#CACFD2");
 	});
 	$('div.language-slider').mouseleave(function(){
-		$(this).css("background-color", "#E5E8E8");
+		$(this).css("background-color", "#D7DBDD");
 	});
 
 
