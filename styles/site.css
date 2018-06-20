@@ -72,8 +72,25 @@ body{
 
 .projects{
 	background-color: #D7DBDD;
-	padding-bottom:  5%;
+	padding:  5%;
 }
+
+.details-button img{
+	height: 50px;
+	width: auto;
+}
+
+.details-button{
+	padding-top:  5%;
+	padding-bottom: 5%;
+	margin: 0px;
+	background-color: #D7DBDD;
+}
+
+
+
+
+
 
 
 

@@ -1,10 +1,15 @@
 $(document).ready(function(){
 
+	$('project-details').hide();
+
 	$('div.language-slider').mouseenter(function(){
 		$(this).css("background-color", "#CACFD2");
-	});
-	$('div.language-slider').mouseleave(function(){
+	}).mouseleave(function(){
 		$(this).css("background-color", "#D7DBDD");
+	});
+
+	$('div.details-button').click(function(){
+		$(this).closest('div.project-details')show();
 	});
 
 
