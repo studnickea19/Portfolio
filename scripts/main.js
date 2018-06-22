@@ -8,9 +8,9 @@ $(document).ready(function(){
 		$(this).css("background-color", "#D7DBDD");
 	});
 
-	$('div.details-button').click(function(){
-		$(this).closest('div.project-details')show();
-	});
+	// $('div.details-button').click(function(){
+	// 	$(this).closest('div.project-details')show();
+	// });
 
 
 

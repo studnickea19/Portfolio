@@ -38,6 +38,11 @@ body{
 	font-family: 'Rock Salt';
 }
 
+.headline{
+    padding-left: 6%;
+    padding-top: 3%;
+}
+
 .ellie{
 	width: 200px;
 	max-width: 100%;
@@ -221,6 +226,7 @@ h2.f4.text-normal.mb-3 {
 
 .float-left.text-gray {
 	text-align: center;
+
 }
 
 
